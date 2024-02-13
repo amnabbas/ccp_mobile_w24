@@ -33,14 +33,12 @@ img {
     width: 25%;
     display: block;
     margin: auto;
-    border: 10px dashed white;
  }
 
  video {
     width: 25%;
     display: block;
     margin: auto;
-    border: 10px dashed white;
  }
 
 a {
@@ -89,16 +87,17 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; /* Defines three rows */
-    grid-gap: 10px; /* Adjust the gap as needed */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
 }
 
-/* Ensure the images do not overflow their containers */
-.grid-item img {
-    max-width: 100%;
-    height: auto;
+.grid-item{
+    border: 2px solid white;
+    padding: 20px;
 }
+
+
 
 .recipe-grid {
     display: grid;
@@ -107,11 +106,6 @@ a {
 }
 
 .recipe {
-    border: 1px solid #ccc;
+    border: 2px dashed black;
     padding: 20px;
-}
-
-.pets-gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
